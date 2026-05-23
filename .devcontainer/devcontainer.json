@@ -7,5 +7,5 @@
   "shutdownAction": "stopCompose",
   "workspaceFolder" : "/workspaces/FlowMVI",
   "remoteUser" : "vscode",
-  "postCreateCommand" : "sudo chown -R vscode:users /workspaces/FlowMVI && chmod -R 775 /workspaces/FlowMVI && mkdir -p /home/vscode/.junie && chmod -R 775 /home/vscode/.junie"
+  "postCreateCommand" : "sudo chown -R vscode:users /workspaces/FlowMVI && chmod -R 775 /workspaces/FlowMVI"
 }
