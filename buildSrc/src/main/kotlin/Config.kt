@@ -119,7 +119,7 @@ object Config {
 
         const val id = "$artifactId.ideplugin"
         const val name = Config.name
-        const val minIdeaVersion = "241"
+        const val minIdeaVersion = "242"
         const val certPath = "certificates/plugin_certificate_chain.crt"
         val jvmTarget = JvmTarget.JVM_21
 
