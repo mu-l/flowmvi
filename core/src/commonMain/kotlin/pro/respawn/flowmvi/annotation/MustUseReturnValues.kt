@@ -1,3 +1,6 @@
 package pro.respawn.flowmvi.annotation
 
-public typealias MustUseReturnValues = kotlin.MustUseReturnValue
+/**
+ * Marks declarations whose return values are expected to be used by callers.
+ */
+public typealias MustUseReturnValues = kotlin.MustUseReturnValues
