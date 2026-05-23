@@ -7,6 +7,7 @@ package pro.respawn.flowmvi.api
 @DslMarker
 @Target(
     AnnotationTarget.CLASS,
+    AnnotationTarget.FUNCTION,
     AnnotationTarget.TYPE,
     AnnotationTarget.TYPEALIAS,
 )
