@@ -15,15 +15,22 @@ concurrency:
   group: "publish"
   cancel-in-progress: true
 
+permissions:
+  actions: read
+  contents: write
+
 jobs:
   debugger-macos:
     uses: ./.github/workflows/desktop-macos.yml
+    secrets: inherit
   debugger-linux:
     uses: ./.github/workflows/desktop-linux.yml
+    secrets: inherit
   debugger-win:
     uses: ./.github/workflows/desktop-win.yml
+    secrets: inherit
   publish:
-#    needs: [ debugger-macos, debugger-linux, debugger-win ]
+    needs: [ debugger-macos, debugger-linux, debugger-win ]
     runs-on: macos-latest
 
     steps:
@@ -39,8 +46,8 @@ jobs:
           SIGNING_KEYSTORE_BASE64: ${{ secrets.KEYSTORE_B64 }}
           KEYSTORE_PATH: ./certificates/keystore.jks
         run: |
-          echo $SIGNING_KEYSTORE_BASE64 | base64 --decode > $KEYSTORE_PATH
-          echo "keystore_path=$KEYSTORE_PATH" >> $GITHUB_OUTPUT
+          echo "$SIGNING_KEYSTORE_BASE64" | base64 --decode > "$KEYSTORE_PATH"
+          echo "keystore_path=$KEYSTORE_PATH" >> "$GITHUB_OUTPUT"
 
       - name: Set up JDK
         uses: actions/setup-java@v5
@@ -94,7 +101,24 @@ jobs:
         env:
           CHANGELOG: ${{steps.build_changelog.outputs.changelog}}
 
-        # TODO: Use matrix strat and attach artifacts to the release
+      - name: Download debugger installers
+        uses: actions/download-artifact@v7
+        with:
+          pattern: Debugger_*
+          path: release-artifacts/debugger
+
+      - name: Validate debugger installers
+        run: |
+          find release-artifacts/debugger -type f -print
+
+          macos_count="$(find release-artifacts/debugger/Debugger_MacOS -type f -name '*.dmg' -print | wc -l | tr -d ' ')"
+          linux_count="$(find release-artifacts/debugger/Debugger_Linux -type f -name '*.deb' -print | wc -l | tr -d ' ')"
+          windows_count="$(find release-artifacts/debugger/Debugger_Windows -type f -name '*.exe' -print | wc -l | tr -d ' ')"
+
+          test "$macos_count" -eq 1
+          test "$linux_count" -eq 1
+          test "$windows_count" -eq 1
+
       - name: Create GH release
         uses: ncipollo/release-action@v1.20.0
         id: create_release
@@ -102,7 +126,7 @@ jobs:
           draft: true
           artifactErrorsFailBuild: true
           prerelease: false
-          artifacts: sample/build/outputs/apk/release/pro.respawn.flowmvi.sample.apk
+          artifacts: sample/build/outputs/apk/release/pro.respawn.flowmvi.sample.apk,release-artifacts/debugger/Debugger_MacOS/*.dmg,release-artifacts/debugger/Debugger_Linux/*.deb,release-artifacts/debugger/Debugger_Windows/*.exe
           body: ${{steps.build_changelog.outputs.changelog}}
           tag: ${{ inputs.tag != '' && inputs.tag || github.ref_name }}
         env:
