@@ -34,7 +34,7 @@ Install the FlowMVI Claude Code plugin from the Respawn marketplace:
 Install the FlowMVI Codex skill with the `skill-installer` skill:
 
 ```text
-$skill-installer install https://github.com/respawn-app/FlowMVI/tree/main/skills/flowmvi
+$skill-installer install https://github.com/respawn-llc/FlowMVI/tree/main/skills/flowmvi
 ```
 
 Restart Codex after installation to pick up the new skill.

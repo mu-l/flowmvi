@@ -65,7 +65,7 @@ const config: Config = {
                     sidebarCollapsed: false,
                     sidebarPath: "./sidebars.ts",
                     routeBasePath: "/",
-                    editUrl: "https://github.com/respawn-app/FlowMVI/blob/master/docs/",
+                    editUrl: "https://github.com/respawn-llc/FlowMVI/blob/master/docs/",
                 },
                 blog: false,
                 pages: false,
@@ -128,7 +128,7 @@ const config: Config = {
                     position: "right",
                 },
                 {
-                    href: "https://github.com/respawn-app/FlowMVI",
+                    href: "https://github.com/respawn-llc/FlowMVI",
                     label: undefined,
                     className: "header-github-link",
                     position: "right",
@@ -217,7 +217,7 @@ Quick navigation:
 - For state management, see state section
 - For plugins system, see plugins section
 
-GitHub: https://github.com/respawn-app/FlowMVI`,
+GitHub: https://github.com/respawn-llc/FlowMVI`,
                 fullRootContent: `Complete offline documentation bundle for FlowMVI.
 
 This file contains all documentation content in a single document following the llmstxt.org standard.

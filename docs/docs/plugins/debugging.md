@@ -204,7 +204,7 @@ Please don't do this for release builds.
 
 Either install the IDE plugin by clicking the card on top, or install the desktop app from the Artifacts section of the
 repository.
-You can find the latest archive on the [releases](https://github.com/respawn-app/FlowMVI/releases) page on GitHub.
+You can find the latest archive on the [releases](https://github.com/respawn-llc/FlowMVI/releases) page on GitHub.
 
 Run the debugger. The panel will ask you to configure host and port. Unless you are using a physical external device,
 you can just use the defaults. Your devices must be on the same network to connect successfully.

@@ -8,7 +8,7 @@ On this page you can find additional resources and projects to be inspired by or
 
 ## Sample apps
 
-### [Meeting Cost](https://github.com/respawn-app/meetingcost)
+### [Meeting Cost](https://github.com/respawn-llc/meetingcost)
 
 This is a simple one-page application to calculate meeting costs in real-time.
 It features the simplest setup to get started with the library and implement a functional app.
@@ -17,7 +17,7 @@ It features the simplest setup to get started with the library and implement a f
 - Platforms: Wasm, Desktop
 - Difficulty: Beginner
 
-### [Official Sample App](https://github.com/respawn-app/FlowMVI/tree/master/sample)
+### [Official Sample App](https://github.com/respawn-llc/FlowMVI/tree/master/sample)
 
 The official sample app outlines navigation setup with Decompose, multiple platforms, showcases native Android
 integration, DI setup & more. It's built in such a way as to be deployed to

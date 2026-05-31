@@ -1,13 +1,13 @@
 ![FlowMVI Framework Banner](https://opensource.respawn.pro/FlowMVI/banner.webp)
 
-[![CI](https://github.com/respawn-app/FlowMVI/actions/workflows/ci.yml/badge.svg)](https://github.com/respawn-app/FlowMVI/actions/workflows/ci.yml)
-![License](https://img.shields.io/github/license/respawn-app/flowMVI)
-![GitHub last commit](https://img.shields.io/github/last-commit/respawn-app/FlowMVI)
-![Issues](https://img.shields.io/github/issues/respawn-app/FlowMVI)
-![GitHub top language](https://img.shields.io/github/languages/top/respawn-app/flowMVI)
+[![CI](https://github.com/respawn-llc/FlowMVI/actions/workflows/ci.yml/badge.svg)](https://github.com/respawn-llc/FlowMVI/actions/workflows/ci.yml)
+![License](https://img.shields.io/github/license/respawn-llc/flowMVI)
+![GitHub last commit](https://img.shields.io/github/last-commit/respawn-llc/FlowMVI)
+![Issues](https://img.shields.io/github/issues/respawn-llc/FlowMVI)
+![GitHub top language](https://img.shields.io/github/languages/top/respawn-llc/flowMVI)
 [![AndroidWeekly #563](https://androidweekly.net/issues/issue-563/badge)](https://androidweekly.net/issues/issue-563/)
 [![Slack channel](https://img.shields.io/badge/Chat-Slack-orange.svg?style=flat&logo=slack)](https://kotlinlang.slack.com/messages/flowmvi/)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/respawn-app/FlowMVI)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/respawn-llc/FlowMVI)
 
 ![badge][badge-android] ![badge][badge-jvm] ![badge][badge-js] ![badge][badge-nodejs] ![badge][badge-linux] ![badge][badge-windows] ![badge][badge-ios] ![badge][badge-mac] ![badge][badge-watchos] ![badge][badge-tvos] ![badge][badge-wasm]
 
@@ -281,11 +281,11 @@ Your browser does not support the video element. You can view the demo at our we
 
 ## People love the library:
 
-<a href="https://star-history.com/#respawn-app/flowmvi&Date">
+<a href="https://star-history.com/#respawn-llc/flowmvi&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=respawn-app/flowmvi&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=respawn-app/flowmvi&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=respawn-app/flowmvi&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=respawn-llc/flowmvi&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=respawn-llc/flowmvi&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=respawn-llc/flowmvi&type=Date" />
   </picture>
 </a>
 
